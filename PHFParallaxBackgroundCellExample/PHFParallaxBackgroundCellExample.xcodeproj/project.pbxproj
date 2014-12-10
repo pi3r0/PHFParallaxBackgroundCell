@@ -1,0 +1,477 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		89567D201A38E6810068ACF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89567D1F1A38E6810068ACF9 /* AppDelegate.swift */; };
+		89567D221A38E6810068ACF9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89567D211A38E6810068ACF9 /* ViewController.swift */; };
+		89567D251A38E6810068ACF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89567D231A38E6810068ACF9 /* Main.storyboard */; };
+		89567D271A38E6810068ACF9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89567D261A38E6810068ACF9 /* Images.xcassets */; };
+		89567D2A1A38E6810068ACF9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89567D281A38E6810068ACF9 /* LaunchScreen.xib */; };
+		89567D361A38E6810068ACF9 /* PHFParallaxBackgroundCellExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89567D351A38E6810068ACF9 /* PHFParallaxBackgroundCellExampleTests.swift */; };
+		89567D421A38E7510068ACF9 /* PHFParallaxBackgroundCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89567D411A38E7510068ACF9 /* PHFParallaxBackgroundCell.swift */; };
+		89567D451A38EB0E0068ACF9 /* PHFParallaxTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89567D441A38EB0E0068ACF9 /* PHFParallaxTableView.swift */; };
+		89567D4C1A38EDB70068ACF9 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 89567D471A38EDB70068ACF9 /* 1.png */; };
+		89567D4D1A38EDB70068ACF9 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 89567D481A38EDB70068ACF9 /* 2.png */; };
+		89567D4E1A38EDB70068ACF9 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 89567D491A38EDB70068ACF9 /* 3.png */; };
+		89567D4F1A38EDB70068ACF9 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 89567D4A1A38EDB70068ACF9 /* 4.png */; };
+		89567D501A38EDB70068ACF9 /* 0.png in Resources */ = {isa = PBXBuildFile; fileRef = 89567D4B1A38EDB70068ACF9 /* 0.png */; };
+		89567D521A38EEC00068ACF9 /* TextAndBackgroundTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89567D511A38EEC00068ACF9 /* TextAndBackgroundTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		89567D301A38E6810068ACF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 89567D121A38E6810068ACF9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 89567D191A38E6810068ACF9;
+			remoteInfo = PHFParallaxBackgroundCellExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		89567D1A1A38E6810068ACF9 /* PHFParallaxBackgroundCellExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PHFParallaxBackgroundCellExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		89567D1E1A38E6810068ACF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89567D1F1A38E6810068ACF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		89567D211A38E6810068ACF9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		89567D241A38E6810068ACF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		89567D261A38E6810068ACF9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		89567D291A38E6810068ACF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		89567D2F1A38E6810068ACF9 /* PHFParallaxBackgroundCellExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PHFParallaxBackgroundCellExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		89567D341A38E6810068ACF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89567D351A38E6810068ACF9 /* PHFParallaxBackgroundCellExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHFParallaxBackgroundCellExampleTests.swift; sourceTree = "<group>"; };
+		89567D411A38E7510068ACF9 /* PHFParallaxBackgroundCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PHFParallaxBackgroundCell.swift; path = ../../PHFParallaxBackgroundCell/PHFParallaxBackgroundCell.swift; sourceTree = "<group>"; };
+		89567D441A38EB0E0068ACF9 /* PHFParallaxTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PHFParallaxTableView.swift; path = ../../PHFParallaxBackgroundCell/PHFParallaxTableView.swift; sourceTree = "<group>"; };
+		89567D471A38EDB70068ACF9 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		89567D481A38EDB70068ACF9 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		89567D491A38EDB70068ACF9 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		89567D4A1A38EDB70068ACF9 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		89567D4B1A38EDB70068ACF9 /* 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 0.png; sourceTree = "<group>"; };
+		89567D511A38EEC00068ACF9 /* TextAndBackgroundTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextAndBackgroundTableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		89567D171A38E6810068ACF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89567D2C1A38E6810068ACF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		89567D111A38E6810068ACF9 = {
+			isa = PBXGroup;
+			children = (
+				89567D1C1A38E6810068ACF9 /* PHFParallaxBackgroundCellExample */,
+				89567D321A38E6810068ACF9 /* PHFParallaxBackgroundCellExampleTests */,
+				89567D1B1A38E6810068ACF9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		89567D1B1A38E6810068ACF9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				89567D1A1A38E6810068ACF9 /* PHFParallaxBackgroundCellExample.app */,
+				89567D2F1A38E6810068ACF9 /* PHFParallaxBackgroundCellExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		89567D1C1A38E6810068ACF9 /* PHFParallaxBackgroundCellExample */ = {
+			isa = PBXGroup;
+			children = (
+				89567D401A38E6E50068ACF9 /* PHFParallaxBackground */,
+				89567D3F1A38E69F0068ACF9 /* Resources */,
+				89567D1F1A38E6810068ACF9 /* AppDelegate.swift */,
+				89567D211A38E6810068ACF9 /* ViewController.swift */,
+				89567D231A38E6810068ACF9 /* Main.storyboard */,
+				89567D261A38E6810068ACF9 /* Images.xcassets */,
+				89567D281A38E6810068ACF9 /* LaunchScreen.xib */,
+				89567D1D1A38E6810068ACF9 /* Supporting Files */,
+				89567D511A38EEC00068ACF9 /* TextAndBackgroundTableViewCell.swift */,
+			);
+			path = PHFParallaxBackgroundCellExample;
+			sourceTree = "<group>";
+		};
+		89567D1D1A38E6810068ACF9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				89567D1E1A38E6810068ACF9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		89567D321A38E6810068ACF9 /* PHFParallaxBackgroundCellExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				89567D351A38E6810068ACF9 /* PHFParallaxBackgroundCellExampleTests.swift */,
+				89567D331A38E6810068ACF9 /* Supporting Files */,
+			);
+			path = PHFParallaxBackgroundCellExampleTests;
+			sourceTree = "<group>";
+		};
+		89567D331A38E6810068ACF9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				89567D341A38E6810068ACF9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		89567D3F1A38E69F0068ACF9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				89567D461A38EDB70068ACF9 /* Images */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		89567D401A38E6E50068ACF9 /* PHFParallaxBackground */ = {
+			isa = PBXGroup;
+			children = (
+				89567D411A38E7510068ACF9 /* PHFParallaxBackgroundCell.swift */,
+				89567D441A38EB0E0068ACF9 /* PHFParallaxTableView.swift */,
+			);
+			name = PHFParallaxBackground;
+			sourceTree = "<group>";
+		};
+		89567D461A38EDB70068ACF9 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				89567D4B1A38EDB70068ACF9 /* 0.png */,
+				89567D471A38EDB70068ACF9 /* 1.png */,
+				89567D481A38EDB70068ACF9 /* 2.png */,
+				89567D491A38EDB70068ACF9 /* 3.png */,
+				89567D4A1A38EDB70068ACF9 /* 4.png */,
+			);
+			name = Images;
+			path = Resources/Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		89567D191A38E6810068ACF9 /* PHFParallaxBackgroundCellExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89567D391A38E6810068ACF9 /* Build configuration list for PBXNativeTarget "PHFParallaxBackgroundCellExample" */;
+			buildPhases = (
+				89567D161A38E6810068ACF9 /* Sources */,
+				89567D171A38E6810068ACF9 /* Frameworks */,
+				89567D181A38E6810068ACF9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PHFParallaxBackgroundCellExample;
+			productName = PHFParallaxBackgroundCellExample;
+			productReference = 89567D1A1A38E6810068ACF9 /* PHFParallaxBackgroundCellExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		89567D2E1A38E6810068ACF9 /* PHFParallaxBackgroundCellExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89567D3C1A38E6810068ACF9 /* Build configuration list for PBXNativeTarget "PHFParallaxBackgroundCellExampleTests" */;
+			buildPhases = (
+				89567D2B1A38E6810068ACF9 /* Sources */,
+				89567D2C1A38E6810068ACF9 /* Frameworks */,
+				89567D2D1A38E6810068ACF9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				89567D311A38E6810068ACF9 /* PBXTargetDependency */,
+			);
+			name = PHFParallaxBackgroundCellExampleTests;
+			productName = PHFParallaxBackgroundCellExampleTests;
+			productReference = 89567D2F1A38E6810068ACF9 /* PHFParallaxBackgroundCellExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		89567D121A38E6810068ACF9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Pierre Houguet";
+				TargetAttributes = {
+					89567D191A38E6810068ACF9 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					89567D2E1A38E6810068ACF9 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 89567D191A38E6810068ACF9;
+					};
+				};
+			};
+			buildConfigurationList = 89567D151A38E6810068ACF9 /* Build configuration list for PBXProject "PHFParallaxBackgroundCellExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 89567D111A38E6810068ACF9;
+			productRefGroup = 89567D1B1A38E6810068ACF9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				89567D191A38E6810068ACF9 /* PHFParallaxBackgroundCellExample */,
+				89567D2E1A38E6810068ACF9 /* PHFParallaxBackgroundCellExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		89567D181A38E6810068ACF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89567D251A38E6810068ACF9 /* Main.storyboard in Resources */,
+				89567D4F1A38EDB70068ACF9 /* 4.png in Resources */,
+				89567D4C1A38EDB70068ACF9 /* 1.png in Resources */,
+				89567D4D1A38EDB70068ACF9 /* 2.png in Resources */,
+				89567D4E1A38EDB70068ACF9 /* 3.png in Resources */,
+				89567D501A38EDB70068ACF9 /* 0.png in Resources */,
+				89567D2A1A38E6810068ACF9 /* LaunchScreen.xib in Resources */,
+				89567D271A38E6810068ACF9 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89567D2D1A38E6810068ACF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		89567D161A38E6810068ACF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89567D221A38E6810068ACF9 /* ViewController.swift in Sources */,
+				89567D421A38E7510068ACF9 /* PHFParallaxBackgroundCell.swift in Sources */,
+				89567D201A38E6810068ACF9 /* AppDelegate.swift in Sources */,
+				89567D521A38EEC00068ACF9 /* TextAndBackgroundTableViewCell.swift in Sources */,
+				89567D451A38EB0E0068ACF9 /* PHFParallaxTableView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89567D2B1A38E6810068ACF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89567D361A38E6810068ACF9 /* PHFParallaxBackgroundCellExampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		89567D311A38E6810068ACF9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 89567D191A38E6810068ACF9 /* PHFParallaxBackgroundCellExample */;
+			targetProxy = 89567D301A38E6810068ACF9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		89567D231A38E6810068ACF9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				89567D241A38E6810068ACF9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		89567D281A38E6810068ACF9 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				89567D291A38E6810068ACF9 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		89567D371A38E6810068ACF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		89567D381A38E6810068ACF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		89567D3A1A38E6810068ACF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PHFParallaxBackgroundCellExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		89567D3B1A38E6810068ACF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PHFParallaxBackgroundCellExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		89567D3D1A38E6810068ACF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PHFParallaxBackgroundCellExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PHFParallaxBackgroundCellExample.app/PHFParallaxBackgroundCellExample";
+			};
+			name = Debug;
+		};
+		89567D3E1A38E6810068ACF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PHFParallaxBackgroundCellExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PHFParallaxBackgroundCellExample.app/PHFParallaxBackgroundCellExample";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		89567D151A38E6810068ACF9 /* Build configuration list for PBXProject "PHFParallaxBackgroundCellExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89567D371A38E6810068ACF9 /* Debug */,
+				89567D381A38E6810068ACF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89567D391A38E6810068ACF9 /* Build configuration list for PBXNativeTarget "PHFParallaxBackgroundCellExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89567D3A1A38E6810068ACF9 /* Debug */,
+				89567D3B1A38E6810068ACF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		89567D3C1A38E6810068ACF9 /* Build configuration list for PBXNativeTarget "PHFParallaxBackgroundCellExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89567D3D1A38E6810068ACF9 /* Debug */,
+				89567D3E1A38E6810068ACF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 89567D121A38E6810068ACF9 /* Project object */;
+}
