@@ -2,7 +2,6 @@ PHFParallaxBackgroundCell
 =========================
 
 ![PHFParallaxBackgroundCell screenshot](https://github.com/pi3r0/PHFParallaxBackgroundCell/blob/master/images/PHFParallaxBackgroundCell.gif?raw=true "Screenshot")
-![PHFParallaxBackgroundCell screenshot](https://github.com/pi3r0/PHFParallaxBackgroundCell/blob/master/images/PHFParallaxBackgroundCell.PNG?raw=true "Screenshot")
 
 Extension for the `UITableView` and `UITableViewCell` that avoid a parallax effect when user is scrolling. Really easy to implement and use and Swift.
 
