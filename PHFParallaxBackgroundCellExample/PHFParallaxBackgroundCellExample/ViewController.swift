@@ -8,8 +8,10 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, ParallaxBackgroundCellDelegate {
+ 
+    
+    var _images : Array<NSString> = [];
     
     @IBOutlet var _imageTableView : PHFParallaxTableView!;
     
@@ -17,6 +19,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        _images = ["0", "1", "2", "3", "4", "https://farm3.staticflickr.com/2890/13261455834_95f2f26c40_n.jpg", "https://farm8.staticflickr.com/7370/13558867695_74ea7ed1f9_b.jpg", "https://farm9.staticflickr.com/8305/7749825938_3fb5433606_b.jpg", "https://farm9.staticflickr.com/8295/7996355918_6ba942c096_b.jpg" , "https://farm8.staticflickr.com/7370/13558867695_74ea7ed1f9_b.jpg", "https://farm9.staticflickr.com/8305/7749825938_3fb5433606_b.jpg", "https://farm9.staticflickr.com/8295/7996355918_6ba942c096_b.jpg" ];
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,7 +37,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         return 0.0;
     }
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 25;
+        return _images.count;
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
@@ -48,18 +51,43 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         if (imageCell == nil) {
             imageCell = TextAndBackgroundTableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "imageNumber");
             imageCell.selectionStyle = UITableViewCellSelectionStyle.None;
+            imageCell.delegate = self;
         }
+        imageCell.indexPath = indexPath;
         
         let text : NSString = NSString(format:"Cell n°%d", indexPath.row);
         
-        let imageNumber : NSInteger = indexPath.row % 5 + 1;
         
-        let imageNamed : NSString = NSString(format:"%d", imageNumber);
+        let imageNamed : NSString = _images[indexPath.row];
         imageCell.setTextAndImage(text, imageNamed: imageNamed);
         
             
         return imageCell;
     }
+    
+    
+    //Parallax cell delegate
+    func offsetForCellAtIndexPath(indexPath: NSIndexPath) -> CGFloat {
+        
+        return 20.0;
+    }
+    
+    
+    func backgroundIsOnlineCellAtIndexPath(indexPath: NSIndexPath) -> Bool {
+
+        var isOnline = true;
+        
+        if (indexPath.row < 5) {
+            isOnline = false;
+        }
+        return isOnline;
+    }
+
+    func backgroundPlaceholderForCellAtIndexPath(indexPath: NSIndexPath) -> NSString {
+            return "0";
+    }
+    
+    
     
     func scrollViewDidScroll(scrollView: UIScrollView) {
         
