@@ -69,7 +69,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     //Parallax cell delegate
     func offsetForCellAtIndexPath(indexPath: NSIndexPath) -> CGFloat {
         
-        return 20.0;
+        return 60.0;
     }
     
     

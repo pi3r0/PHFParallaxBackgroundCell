@@ -12,7 +12,7 @@ import UIKit
     
     /**
     * func offsetForCellAtIndexPath
-    * get the current offset for the background image, (image.height - cell.heigth)/2
+    * get the current offset for the background image
     * @Param : indexPath : NSIndexPath, the cell indexPath
     * @Return : CGFloat, the offset choosen
     */
@@ -53,7 +53,7 @@ class PHFParallaxBackgroundCell: UITableViewCell, AsyncImageRequestDelegate {
     }
     
     //the offset for the image view
-    var _offset : CGFloat = 20.0;
+    var _offset : CGFloat = 40.0;
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -90,7 +90,7 @@ class PHFParallaxBackgroundCell: UITableViewCell, AsyncImageRequestDelegate {
 
     override func layoutSubviews() {
         
-         _offset = 20.0;
+         _offset = 40.0;
     
         //Get the offset if user set one in the delgate
         let offset = delegate?.offsetForCellAtIndexPath?(indexPath!);
@@ -102,7 +102,7 @@ class PHFParallaxBackgroundCell: UITableViewCell, AsyncImageRequestDelegate {
         }
        
         //Set the frame for the background view
-        _backgroundIMV.frame = CGRectMake(0.0, -(_offset), self.frame.size.width, self.frame.size.height + 2*_offset);
+        _backgroundIMV.frame = CGRectMake(0.0, -(_offset/2), self.frame.size.width, self.frame.size.height + _offset);
     }
     
   
