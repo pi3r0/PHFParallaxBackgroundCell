@@ -27,12 +27,12 @@ class PHFGetAsyncBackgroundImage: NSObject {
     * @Param : imageUrl, the image url in string
     */
     func getAsyncImage(imageUrl : NSString) {
-        let imageURL : NSURL! = NSURL(string: imageUrl);
+        let imageURL : NSURL! = NSURL(string: imageUrl as String);
         
         Alamofire.request(.GET, imageURL, parameters: nil)
             .response { (request, response, data, error) in
                 
-                let imageData : NSData? = data as NSData?;
+                let imageData : NSData? = data as! NSData?;
                 
                 if ((imageData) != nil && imageData?.length > 0) {
                     let image : UIImage = UIImage(data: imageData!)!;

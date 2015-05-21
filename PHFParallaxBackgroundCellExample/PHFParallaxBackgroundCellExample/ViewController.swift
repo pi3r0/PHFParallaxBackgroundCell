@@ -46,7 +46,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        var imageCell = tableView.dequeueReusableCellWithIdentifier("imagecell") as TextAndBackgroundTableViewCell!;
+        var imageCell = tableView.dequeueReusableCellWithIdentifier("imagecell") as! TextAndBackgroundTableViewCell!;
             
         if (imageCell == nil) {
             imageCell = TextAndBackgroundTableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "imageNumber");
@@ -55,17 +55,17 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         }
         imageCell.indexPath = indexPath;
         
-        let text : NSString = NSString(format:"Cell n°%d", indexPath.row);
+        let text : String = "Cell n°\(indexPath.row)";
         
         
-        let imageNamed : NSString = _images[indexPath.row];
+        let imageNamed : String = _images[indexPath.row] as String;
         imageCell.setTextAndImage(text, imageNamed: imageNamed);
         
             
         return imageCell;
     }
     
-    
+  
     //Parallax cell delegate
     func offsetForCellAtIndexPath(indexPath: NSIndexPath) -> CGFloat {
         
@@ -83,7 +83,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         return isOnline;
     }
 
-    func backgroundPlaceholderForCellAtIndexPath(indexPath: NSIndexPath) -> NSString {
+    func backgroundPlaceholderForCellAtIndexPath(indexPath: NSIndexPath) -> String {
             return "0";
     }
     

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PHFParallaxTableView: UITableView, UIScrollViewDelegate {
+class PHFParallaxTableView: UITableView {
 
     /*
     // Only override drawRect: if you perform custom drawing.
@@ -19,14 +19,17 @@ class PHFParallaxTableView: UITableView, UIScrollViewDelegate {
     */
     
     
+    
     func scrollViewDidScroll(superview : UIView) {
+        
+
     
         //Get all the visible cells
         let visibleCell = self.visibleCells();
         
         for cell in visibleCell {
             //Change the cell origin
-            (cell as PHFParallaxBackgroundCell).parallaxEffect(self, view: superview);
+            (cell as! PHFParallaxBackgroundCell).parallaxEffect(self, view: superview);
         }
         
     }

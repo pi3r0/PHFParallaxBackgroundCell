@@ -32,7 +32,7 @@ import UIKit
     * @Param : indexPath : NSIndexPath, the cell indexPath
     * @Return : NSString, local image name
     */
-    optional func backgroundPlaceholderForCellAtIndexPath(indexPath : NSIndexPath) -> NSString;
+    optional func backgroundPlaceholderForCellAtIndexPath(indexPath : NSIndexPath) -> String;
 }
 
 
@@ -40,7 +40,7 @@ class PHFParallaxBackgroundCell: UITableViewCell, AsyncImageRequestDelegate {
 
     var _backgroundIMV : UIImageView!;
     
-    var _backgroundImage : NSString! = "";
+    var _backgroundImage : String! = "";
     
 
     var delegate : ParallaxBackgroundCellDelegate? = nil;
@@ -112,7 +112,7 @@ class PHFParallaxBackgroundCell: UITableViewCell, AsyncImageRequestDelegate {
     * set the image
     * @Param : imageName, the image name in the local workspace
     */
-    func setBackgroundImage(imageNamed : NSString) {
+    func setBackgroundImage(imageNamed : String) {
         
         if (_backgroundImage != imageNamed) {
             
@@ -122,7 +122,7 @@ class PHFParallaxBackgroundCell: UITableViewCell, AsyncImageRequestDelegate {
             //Test if user wants an online background
             let isOnline : Bool? = delegate?.backgroundIsOnlineCellAtIndexPath?(self.indexPath!);
             
-            if ((isOnline?) != nil && isOnline == true) {
+            if ((isOnline) != nil && isOnline == true) {
                 
                 //Begin the request to get the image
                 lookingForABackgroundImage(_backgroundImage);
@@ -154,6 +154,7 @@ class PHFParallaxBackgroundCell: UITableViewCell, AsyncImageRequestDelegate {
         
         _backgroundIMV.frame.origin.y =  move;
         
+        
     }
     
      /**
@@ -162,7 +163,7 @@ class PHFParallaxBackgroundCell: UITableViewCell, AsyncImageRequestDelegate {
     *
     * @Param : imageUrl the image name in the internet workspace
     */
-    func lookingForABackgroundImage(imageUrl : NSString) {
+    func lookingForABackgroundImage(imageUrl : String) {
         
         //Get the placeholder if user decide to set one
         let placeHolderForCell = delegate?.backgroundPlaceholderForCellAtIndexPath?(self.indexPath!);

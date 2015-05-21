@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7412382D1B0E3A320034105B /* Alamofire.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 7412382B1B0E3A0E0034105B /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		89567D201A38E6810068ACF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89567D1F1A38E6810068ACF9 /* AppDelegate.swift */; };
 		89567D221A38E6810068ACF9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89567D211A38E6810068ACF9 /* ViewController.swift */; };
 		89567D251A38E6810068ACF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89567D231A38E6810068ACF9 /* Main.storyboard */; };
@@ -21,7 +22,6 @@
 		89567D4F1A38EDB70068ACF9 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 89567D4A1A38EDB70068ACF9 /* 4.png */; };
 		89567D501A38EDB70068ACF9 /* 0.png in Resources */ = {isa = PBXBuildFile; fileRef = 89567D4B1A38EDB70068ACF9 /* 0.png */; };
 		89567D521A38EEC00068ACF9 /* TextAndBackgroundTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89567D511A38EEC00068ACF9 /* TextAndBackgroundTableViewCell.swift */; };
-		89AB33BB1A433C5B008A3D92 /* Alamofire.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 89AB33B61A433C4C008A3D92 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		89AE557E1A4326E80064E008 /* PHFGetAsyncBackgroundImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AE557D1A4326E80064E008 /* PHFGetAsyncBackgroundImage.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,27 +33,6 @@
 			remoteGlobalIDString = 89567D191A38E6810068ACF9;
 			remoteInfo = PHFParallaxBackgroundCellExample;
 		};
-		89AB33B51A433C4C008A3D92 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 89AB33B01A433C4C008A3D92 /* Alamofire.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
-			remoteInfo = Alamofire;
-		};
-		89AB33B71A433C4C008A3D92 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 89AB33B01A433C4C008A3D92 /* Alamofire.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
-			remoteInfo = AlamofireTests;
-		};
-		89AB33B91A433C54008A3D92 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 89AB33B01A433C4C008A3D92 /* Alamofire.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
-			remoteInfo = Alamofire;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -63,7 +42,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				89AB33BB1A433C5B008A3D92 /* Alamofire.framework in Copy Frameworks */,
+				7412382D1B0E3A320034105B /* Alamofire.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -71,6 +50,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7412382B1B0E3A0E0034105B /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		89567D1A1A38E6810068ACF9 /* PHFParallaxBackgroundCellExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PHFParallaxBackgroundCellExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89567D1E1A38E6810068ACF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89567D1F1A38E6810068ACF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -89,7 +69,6 @@
 		89567D4A1A38EDB70068ACF9 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
 		89567D4B1A38EDB70068ACF9 /* 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 0.png; sourceTree = "<group>"; };
 		89567D511A38EEC00068ACF9 /* TextAndBackgroundTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextAndBackgroundTableViewCell.swift; sourceTree = "<group>"; };
-		89AB33B01A433C4C008A3D92 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		89AE557D1A4326E80064E008 /* PHFGetAsyncBackgroundImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHFGetAsyncBackgroundImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -114,7 +93,7 @@
 		89567D111A38E6810068ACF9 = {
 			isa = PBXGroup;
 			children = (
-				89AB33B01A433C4C008A3D92 /* Alamofire.xcodeproj */,
+				7412382B1B0E3A0E0034105B /* Alamofire.framework */,
 				89567D1C1A38E6810068ACF9 /* PHFParallaxBackgroundCellExample */,
 				89567D321A38E6810068ACF9 /* PHFParallaxBackgroundCellExampleTests */,
 				89567D1B1A38E6810068ACF9 /* Products */,
@@ -202,15 +181,6 @@
 			path = Resources/Images;
 			sourceTree = "<group>";
 		};
-		89AB33B11A433C4C008A3D92 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				89AB33B61A433C4C008A3D92 /* Alamofire.framework */,
-				89AB33B81A433C4C008A3D92 /* AlamofireTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -226,7 +196,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				89AB33BA1A433C54008A3D92 /* PBXTargetDependency */,
 			);
 			name = PHFParallaxBackgroundCellExample;
 			productName = PHFParallaxBackgroundCellExample;
@@ -280,12 +249,6 @@
 			mainGroup = 89567D111A38E6810068ACF9;
 			productRefGroup = 89567D1B1A38E6810068ACF9 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 89AB33B11A433C4C008A3D92 /* Products */;
-					ProjectRef = 89AB33B01A433C4C008A3D92 /* Alamofire.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				89567D191A38E6810068ACF9 /* PHFParallaxBackgroundCellExample */,
@@ -293,23 +256,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		89AB33B61A433C4C008A3D92 /* Alamofire.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Alamofire.framework;
-			remoteRef = 89AB33B51A433C4C008A3D92 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		89AB33B81A433C4C008A3D92 /* AlamofireTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = AlamofireTests.xctest;
-			remoteRef = 89AB33B71A433C4C008A3D92 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		89567D181A38E6810068ACF9 /* Resources */ = {
@@ -365,11 +311,6 @@
 			isa = PBXTargetDependency;
 			target = 89567D191A38E6810068ACF9 /* PHFParallaxBackgroundCellExample */;
 			targetProxy = 89567D301A38E6810068ACF9 /* PBXContainerItemProxy */;
-		};
-		89AB33BA1A433C54008A3D92 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Alamofire;
-			targetProxy = 89AB33B91A433C54008A3D92 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -474,6 +415,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = PHFParallaxBackgroundCellExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -485,6 +430,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = PHFParallaxBackgroundCellExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
